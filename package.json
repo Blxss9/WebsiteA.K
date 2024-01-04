@@ -1,0 +1,26 @@
+{
+  "name": "website_ak",
+  "version": "1.0.0",
+  "description": "Sitio Web - Pyme",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blxss9/WebsiteA.K.git"
+  },
+  "type": "module",
+  "author": "Matías Gutiérrez M.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Blxss9/WebsiteA.K/issues"
+  },
+  "homepage": "https://github.com/Blxss9/WebsiteA.K#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
