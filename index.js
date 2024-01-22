@@ -6,6 +6,20 @@ const app = express();
 // Puerto:
 const port = process.env.PORT || 4000;
 
+// PUG:
+app.set('view engine', 'pug');
+
+// Obtener año actual:
+app.use( (req, res, next) => {
+    const year = new Date();
+
+    res.locals.añoActual = year.getFullYear();
+    next();
+});
+
+// Public Folder
+app.use(express.static('public'))
+
 // Router:
 app.use('/', router);
 
