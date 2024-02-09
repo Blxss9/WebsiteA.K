@@ -25,65 +25,51 @@ h3 {
     font-size: 3rem;
 }
 
+/* ------------------------------------------------------------------------- */
 /* Estilos Header */
 
 .navbar.navbar-expand-lg.navbar.navbar-light{
     background-color: #3a3caa;
+    
 }
 
-.logo-icon{
-    width: 60px;
-    justify-content: center;
-}
-
-a.navbar-brand{
+.navbar{
     font-family: 'Staatliches';
 }
+    .navbar:hover{
+        text-decoration: none;
+    }
 
-span.logo_a, span.logo_b {
+/* Icono */
+.icon{
+    width: 50px;
+}
+
+/* Nombre Pyme  */
+
+.name_a, .name_k{
     font-size: 2.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
-
-span.logo_a{
-    color: #fff;
-}
-
-span.logo_b{
-    color: rgb(5, 208, 230);
-}
-
-a.nav-link{
-    color: #2c2c2c;
-}
-    a:hover{
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);;
-    }
-
-    @media (max-width: 320px){
-        .navbar-toggler {
-            margin: auto; /* Alinear al centro */
-            display: block; /* Hacer que ocupe todo el ancho */
-            text-align: center; /* Alinear texto al centro */
-          }
-    }
-
-.navbar-light .navbar-nav .nav-link {
+    .name_a{
         color: #fff;
-        margin-inline-end: 10px;
+    
+    }
+    .name_k{
+        color: black;
+    }
+
+/* Nav-Links  */
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    margin-inline-end: 10px;
+    font-family: 'Open Sans';
 }
 
-/*Contenedor nav links */
+/* ------------------------------------------------------------------------- */
 .navbar-nav {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-direction: column;
-    padding-left: 0;
-    padding-top: 10px;
-    margin-bottom: 0;
     list-style: none;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    align-content: center;
 }
+
+
