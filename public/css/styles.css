@@ -3,73 +3,154 @@
     font-family: 'Covered By Your Grace', cursive;
     font-family: 'Open Sans', sans-serif;
 }
-
 body {
     font-family: 'Open Sans', sans-serif;
-}
-
-h1, h2, h3 {
-    font-family: 'Staatliches', cursive;
-    color: #15B9D5;
-}
-
-h1 {
-    font-size: 3.4rem;
-}
-
-h2 {
-    font-size: 2.4rem;
-}
-
-h3 {
-    font-size: 3rem;
-}
-
-/* ------------------------------------------------------------------------- */
-/* Estilos Header */
-
-.navbar.navbar-expand-lg.navbar.navbar-light{
-    background-color: #3a3caa;
+    background-color: #f0f0f0;
     
 }
 
-.navbar{
-    font-family: 'Staatliches';
+blockquote {
+    font-weight: bold;
+    line-height: 2;
 }
-    .navbar:hover{
-        text-decoration: none;
-    }
-
-/* Icono */
-.icon{
-    width: 50px;
+p {
+    font-size: 1rem;
+    line-height: 2;
 }
 
-/* Nombre Pyme  */
 
-.name_a, .name_k{
-    font-size: 2.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+/* ---------------------------------------------------------- */
+
+.home {
+    position: relative;
 }
-    .name_a{
-        color: #fff;
+
+.home .navegacion {
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+}
+
+
+.navegacion {
+    background-color:#ececec;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     
-    }
-    .name_k{
-        color: black;
-    }
-
-/* Nav-Links  */
-.navbar-light .navbar-nav .nav-link {
-    color: #fff;
-    margin-inline-end: 10px;
-    font-family: 'Open Sans';
 }
 
-/* ------------------------------------------------------------------------- */
-.navbar-nav {
+/* LOGO */
+.logo-icon {
+    width: 70px;
+
+}
+
+span.logo_a, span.logo_b {
+    font-family: 'Roboto Condensed',;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Para quitar lo subrayado en el logo*/
+header a:hover{
+    text-decoration: none;
+}
+
+/* Color de la palabra "AVENTURA" en el logo */
+span.logo_a{
+    color: #000;
+}
+
+/* Color de la palabra "KID" en el logo */
+span.logo_b{
+    color: #be1414;
+}
+
+/* Nav Links del header */
+header .nav a {
+    font-size: 1.1rem;
+    font-family: 'Roboto Slab';
+    color: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    transition: all 0.25s ease-in, font-size 0.2s ease-out;
+}
+    header .nav a:hover{
+        background-color: rgba(10, 10, 10, 0.24);
+        
+        
+  }
+
+/* Nav Links del footer */
+footer .nav a,
+.copyright {
+    color: #000;
+    font-size: 1.1rem;
+    font-family: 'Roboto Slab';
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    transition: all 0.25s ease-in, font-size 0.2s ease-out;
+}
+
+    footer .nav a:hover{
+        background-color: rgba(10, 10, 10, 0.24);
+    }
+
+
+
+
+/* Slider */
+.slider {
+    background: url(../img//test1.jpg);
+    max-height: 612px;
+    height: 100vh;
+    background-size: cover;
     display: flex;
-    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
+    @media (max-width:768px){
+        .slider{
+            min-height: 100px;
+            height: 50vh;
+    }
+}
+
+.slider h1 {
+    color: white;
+}
+
+.slider em {
+    font-family: 'Covered By Your Grace';
+    font-size: 2rem;
+    order: -1;
+    line-height: .8;
+    color: rgb(252, 252, 252);
+}
+    @media (min-width:768px) {
+        .slider em {
+            font-size: 4rem;
+        }
+    }
+
+/* ------------------------------------------------------------------------------ */
+
+/* HOME PAGE*/
+.secciones-home-page{
+    text-align: center;
+}
+
+    h2.titulo-secciones{
+        font-family: 'Staatliches';
+        font-size: 3rem;
+        color: #ed5034; 
+    }
+
+    .description{
+        font-family: 'Roboto Slab';
+    }
 
 

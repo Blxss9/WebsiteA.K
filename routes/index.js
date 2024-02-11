@@ -15,8 +15,8 @@ router.get('/servicios', (req, res) => {
     res.render('servicios');
 });
 
-router.get('/galeria', (req, res) => {
-    res.render('galeria');
+router.get('/contacto', (req, res) => {
+    res.render('contacto');
 });
 
 export default router;

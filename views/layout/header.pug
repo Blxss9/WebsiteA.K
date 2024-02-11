@@ -1,37 +1,16 @@
 header
-  nav.navbar.navbar-expand-lg.navbar-light
+  .navegacion
     .container
-      a.navbar(href="/")
-        img.icon(src="../img/df.png", alt="Logo")  
-        span.name_a  AVENTURA
-        span.name_k KID
-      ul.navbar-nav
-        li.nav-item
-          a.nav-link(href="/") Inicio
-        li.nav-item
-          a.nav-link(href="/Nosotros") Nosotros
-        li.nav-item
-          a.nav-link(href="/Servicios") Servicios
-        li.nav-item
-          a.nav-link(href="/Contacto") Contacto
-
-
-
-
-    //- .container
-    //-   a.navbar-brand(href="/")
-    //-     img.logo-icon(src="../img/df.png", alt="Logo") 
-    //-     span.logo_a  AVENTURA
-    //-     span.logo_b KID
-    //-   ul.navbar-nav
-    //-       li.nav-item
-    //-         a.nav-link(href="/") Inicio
-    //-       li.nav-item
-    //-         a.nav-link(href="/Nosotros") Nosotros
-    //-       li.nav-item
-    //-         a.nav-link(href="/Servicios") Servicios
-    //-       li.nav-item
-    //-         a.nav-link(href="/Contacto") Contacto
-
-
-
+      .row.justify-content-center.justify-content-md-between.align-items-center.py-3
+        .col-md-4.text-center
+          a(href="/")
+            img.logo-icon(src="../img/icon.svg", alt="Logo") 
+            span.logo_a  AVENTURA
+            span.logo_b KID
+        .col-md-8
+          nav.mt-5.mt-md-0.nav.justify-content-center.justify-content-md-end 
+            a.nav-link.px-3(href="/") Inicio  
+            a.nav-link.px-3(href="/servicios") Servicios
+            a.nav-link.px-3(href="/nosotros") Nosotros
+            a.nav-link.px-3(href="/contacto") Contacto
+            
